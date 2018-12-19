@@ -7,6 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = { itemlist : [] }
+    this.addItem = this.addItem.bind(this);
   }
 
   addItem = () => {
@@ -14,7 +15,7 @@ class App extends Component {
     this.num++;
 
     let newItemList = produce(this.state.itemlist, (draft) => {
-      draft.push({ no : new Date().getDate(), item : "아이템" + this.num });
+      draft.push({ no : this.num, item : "아이템" + this.num });
     });
     this.setState({ itemlist : newItemList });
   }
@@ -23,8 +24,8 @@ class App extends Component {
     return (
       <div className="container">
         <div className="well">
-          <MyButton addItem={this.addItem.bind(this)} />
-          <List itemlist={this.state.itemlist} />
+          <MyButton addItem={this.addItem} />
+          <List isLog="true" itemlist={this.state.itemlist} />
         </div>
       </div>
     );
