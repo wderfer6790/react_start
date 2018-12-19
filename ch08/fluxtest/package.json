@@ -1,14 +1,12 @@
 {
-  "name": "contacts_search",
+  "name": "fluxtest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "bootstrap": "3.x.x",
-    "lodash": "^4.17.11",
+    "flux": "^3.1.3",
+    "immer": "^1.9.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-portal": "^4.2.0",
     "react-scripts": "2.1.1"
   },
   "scripts": {
@@ -25,6 +23,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "proxy": "http://localhost:3001"
+  ]
 }

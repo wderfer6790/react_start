@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "3.x.x",
+    "lodash": "^4.17.11",
+    "react-portal": "^4.2.0"
+  }
+}
